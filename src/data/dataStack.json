@@ -1,8 +1,0 @@
-[{
-    "nameStack": "FRONT-END",
-    "stacks": ["HTML", "CSS", "JavaScript", "React", "Blazor"]
-},
-{
-    "nameStack": "ДИЗАЙН",
-    "stacks": ["Figma", "PhotoShop"]
-}]
