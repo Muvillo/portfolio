@@ -1,0 +1,157 @@
+.containerInfo{
+    display: grid;
+    grid-template-columns: 37.3% auto;
+    align-items: center;
+    margin-top: 55px;
+}
+  
+.photoInfo{
+    width: 100%;
+}
+
+.text{
+    margin-left: 56px;
+    color: #fff;
+}
+  
+.infoText{
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 3px;
+  
+    margin-top: 36px;
+    margin-bottom: 0px;
+}
+
+.fio{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 5.8px;
+    margin-top: 0px;
+}
+  
+.univer{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 907px){
+    .containerInfo{
+        grid-template-columns: 40% auto;
+    }
+
+    .text{
+        margin-left: 40px;
+    }
+
+    .fio{
+        font-size: 26px;
+    }
+
+    .infoText{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (max-width: 533px){
+    .text{
+        margin-left: 20px;
+    }
+    
+    .fio{
+        font-size: 24px;
+    }
+
+    .infoText{
+        font-size: 16px;
+    }
+
+    .univer{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 426px){
+    .containerInfo{
+        grid-template-columns: 50% auto;
+        margin-top: 60px;
+    }
+
+    .containerInfo::before{
+        position: absolute;
+        top: 85px;
+        width: 80%;
+        content: 'Кулакова Юлия Вячеславовна';
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        letter-spacing: 3px;
+        z-index: -1;
+    }
+
+    .text{
+        margin-left: 7px;
+    }
+
+    .fio{
+        display: none;
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .infoText{
+        font-size: 16px;
+        margin-top: 5px;
+        letter-spacing: 2px;
+
+    }
+
+    .univer{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 376px){
+    .containerInfo::before{
+        width: 50%;
+        letter-spacing: 1.5px;
+    }
+
+    .text{
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+
+    .photoInfo{
+        margin-top: 17px;
+    }
+}
+
+@media (max-width: 321px){
+    .text{
+        margin-left: 10px;
+    }
+
+    .infoText{
+        font-size: 14px;
+    }
+
+    .univer{
+        font-size: 12px;
+    }
+
+    .containerInfo::before{
+        width: 41%;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+}

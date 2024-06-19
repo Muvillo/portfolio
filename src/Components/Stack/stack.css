@@ -1,0 +1,67 @@
+.stack{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin-top: 50px;
+  
+    font-family: "Anonymous Pro", monospace;
+    color: #fff;  
+}
+  
+.stackContainer{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #292929;
+    padding: 0px 50px 50px 50px;
+    font-size: 18px;
+}
+  
+.stackContainer:hover{
+    background-color: #474646;
+}
+  
+.nameStack{
+    font-size: 32px;
+}
+
+@media (max-width: 907px){
+    .nameStack{
+        font-size: 26px;
+    }
+
+    .stackContainer{
+        font-size: 12px;
+        padding: 0px 30px 30px 30px;
+    }
+}
+
+@media (max-width: 426px){
+    .stack{
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .nameStack{
+        font-size: 20px;
+    }
+
+    .stackContainer{
+        font-size: 16px;
+        padding: 0px 20px 10px 30px;
+
+    }
+}
+
+@media (max-width: 376px){
+    .title{
+        font-size: 18px;
+    }
+
+    .nameStack{
+        font-size: 18px;
+    }
+
+    .stackContainer{
+        font-size: 14px;
+    }
+}

@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from'./Components/Menu/navMenu';
+import Info from './Components/GeneralInfo/generalInfo';
+import Stack from './Components/Stack/stack';
+import Portfolio from './Components/Portfolio/portfolio';
+import Contacts from './Components/Contact/contacts';
+import nameBtn from './data/dataNameBtn.json'
 
-function App() {
+export default function App() {
+
+  const result = [];
+
+  nameBtn.forEach((element) => {
+    result.push(<Button name={element.name} key={element.id} link={element.id}></Button>);
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    
+    <div className="wrapperMenu">
+      <div className="menu">{result}</div>
+      
+      <span className='menu-nav'>
+            <input className="navigation-btn" type="checkbox" id="navigation-btn" />
+            <label className="navigation-icon" htmlFor="navigation-btn"><span className="category"></span></label>
+        
+            <ul className="navigation">
+              {result}
+            </ul>
+        </span>
     </div>
+
+    <Info></Info>
+    <Stack></Stack>
+    <Portfolio></Portfolio>
+    <Contacts></Contacts>
+    </>
   );
 }
-
-export default App;

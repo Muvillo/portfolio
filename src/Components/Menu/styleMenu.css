@@ -1,0 +1,154 @@
+.btnMenu{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnMenu:hover{
+    color:rgb(96, 92, 92);
+}
+  
+.wrapperMenu{
+    margin-top: 37px;
+    padding-bottom: 17px;
+    border-bottom: #fff 1px solid;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 191px auto 112px;
+}
+
+.menu-nav{
+    display: none;
+    position: absolute;
+    right: -85%;
+}
+
+.menu-nav ul {
+    overflow: hidden;
+}
+
+.navigation{
+    margin-left: -339px;
+    display: block;
+    background-color: #000;
+    width: 350px;
+    padding: 0;
+}
+
+.navigation a{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 30px 0px 30px 30px;
+}
+
+.menu-nav .navigation {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+    
+.menu-nav .navigation-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    user-select: none;
+}
+    
+.menu-nav .navigation-icon .category {
+    background: rgba(255, 255, 255, 1);
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 20px;
+    border-radius: 10%;
+}
+    
+.menu-nav .navigation-icon .category:before,
+.menu-nav .navigation-icon .category:after {
+    background: rgba(255, 255, 255, 1);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    border-radius: 10%;
+}
+  
+.menu-nav .navigation-icon .category:before {
+    top: 7px;
+}
+  
+.menu-nav .navigation-icon .category:after {
+    top: -7px;
+}
+  
+.menu-nav .navigation-btn {
+    display: none;
+}
+  
+.menu-nav .navigation-btn:checked ~ .navigation {
+    max-height: 300px;
+}
+  
+.menu-nav .navigation-btn:checked ~ .navigation-icon .category {
+    background: transparent;
+}
+  
+.menu-nav .navigation-btn:checked ~ .navigation-icon .category:before {
+    transform: rotate(-45deg);
+}
+  
+.menu-nav .navigation-btn:checked ~ .navigation-icon .category:after {
+    transform: rotate(45deg);
+}
+  
+.menu-nav .navigation-btn:checked ~ .navigation-icon:not(.steps) .category:before,
+.menu-nav .navigation-btn:checked ~ .navigation-icon:not(.steps) .category:after {
+    top: 0;
+}
+
+@media (max-width: 907px){
+    .btnMenu{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 622px){
+    .menu{
+        grid-template-columns: 150px auto 91px;
+    }
+}
+
+@media (max-width: 533px){
+    .menu{
+        display: none;
+    }
+
+    .menu-nav{
+        display: block;
+        right: 50px;
+        width: 0;
+    }
+
+    .wrapperMenu{
+        border: none;
+    }
+
+    .navigation{
+        margin-left: -476px;
+        width: 470px;
+    }
+}
+
+@media (max-width:376px){
+
+    .navigation{
+        margin-left: -281px;
+        width: 323px;
+    }
+}

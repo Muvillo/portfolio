@@ -1,0 +1,33 @@
+.contentContact{
+  color: #fff;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 28px;
+  letter-spacing: 5px;
+  
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 50px;
+ 
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 50px;
+}
+  
+.contentContact a:hover{
+  color: #474646;
+}
+
+@media (max-width: 907px) {
+  .contentContact{
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 426px){
+  .contentContact{
+    font-size: 18px;
+  }
+}
